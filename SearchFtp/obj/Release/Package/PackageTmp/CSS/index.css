@@ -1,0 +1,42 @@
+﻿body {
+}
+ul,li {
+    list-style: none;
+    text-align:center;
+}
+.nav{
+    width:100%;
+    background: #e86423;
+    border-color: #ff9935;
+}
+.nav-top a{
+    display:block;
+    color: white;
+    font-size: 16px;
+    font-family: 微软雅黑;
+}
+.nav-top a:hover{
+    border-color: #ff9935;
+    text-decoration: none;
+}
+.nav-top{
+    display: block;
+    float: left;
+    width:70%;
+    margin: 10px 15%;
+}
+.input-group{
+    width: 30%;
+    margin: 30px 35%;
+    float: left;
+}
+.row{
+    margin-right:0px;
+}
+.note{
+    text-align: center;
+    margin-bottom:20px;
+}
+.title{
+    font-size:16px;
+}

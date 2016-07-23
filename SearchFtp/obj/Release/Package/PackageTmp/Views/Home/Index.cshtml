@@ -1,0 +1,33 @@
+﻿@using SearchFtp.Models;
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "魅影无限";
+}
+<form action="~/Home/Search" method="post" onsubmit="return check()">
+    <div class="input-group">
+        <input type="text" class="form-control" placeholder="以空格区分关键词开始搜索..." aria-describedby="basic-addon" name="text" id="keyword">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">
+                <span class="glyphicon glyphicon-search" aria-hidden="true">search</span>
+            </button>
+        </span>
+    </div>
+    <p class="note">（右键点击另存为下载影片）</p>
+    <div class="title row">
+        <div class="col-md-6">文件名称</div>
+        <div class="col-md-3">文件大小</div>
+        <div class="col-md-3">更新时间</div>
+    </div>
+    <div >
+        @foreach (var item in ViewData["ConList"] as List<ContentModels>)
+        {
+            <div class="row">
+                <div class="col-md-6">
+                    <a href="@item.Link" title="@item.Link" target="_blank">@item.Name</a>
+                </div>
+                <div class="col-md-3">@item.Size</div>
+                <div class="col-md-3">@item.Time</div>
+            </div>
+        }
+    </div>
+</form>
