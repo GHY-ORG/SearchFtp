@@ -1,0 +1,23 @@
+﻿@using UpdateFtp.Models;
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@*<form action="~/Home/Search" method="post">
+    <div class="title row pl_10">
+        <div class="col-md-5">文件名称</div>
+        <div class="col-md-3">文件大小</div>
+        <div class="col-md-3">更新时间</div>
+    </div>
+    <div class="row pl_10">
+        @foreach (var item in ViewData["ConList"] as List<ContentModels>)
+        {
+            <div class="col-md-5">
+                <a href="@item.Link" title="@item.Link" target="_blank">@item.Name</a>
+            </div>
+            <div class="col-md-3">@item.Size</div>
+            <div class="col-md-3">@item.Time</div>
+        }
+    </div>
+</form>*@

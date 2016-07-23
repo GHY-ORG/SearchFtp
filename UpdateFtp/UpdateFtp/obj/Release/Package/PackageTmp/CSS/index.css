@@ -1,0 +1,25 @@
+﻿body {
+}
+ul,li {
+    list-style: none;
+}
+.nav-top li{
+    float:left;
+    margin-right:20px;
+}
+.nav-top{
+    display:block;
+    width:100%;
+    float:left;
+}
+.input-group{
+    width: 25%;
+    margin: 50px 40%;
+    float: left;
+}
+.pl_10{
+    padding-left:10px;
+}
+/*div{
+    overflow:hidden;
+}*/
